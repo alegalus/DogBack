@@ -27,6 +27,6 @@ const { PGPORT } = process.env
 // Syncing all the models at once.
 conn.sync().then(() => {
   server.listen(PGPORT, () => {
-    console.log('%s listening at ' + PGPORT); // eslint-disable-line no-console
+    console.log('%s listening at ' + PGPORT + 'funciona Ok'); // eslint-disable-line no-console
   });
 });
