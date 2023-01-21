@@ -18,6 +18,15 @@ const sequelize = new Sequelize(DATABASE_URL, {
   },
 });
 
+//revision de conectividad
+sequelize.authenticate()
+  .then(() => {
+    console.log('conexion existosa')
+  })
+  .catch( err => {
+    console.log( err)
+  })
+
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
