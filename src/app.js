@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const {CORS_URL} = process.env
 
+console.log(CORS_URL)
+
 require('./db.js');
 
 const server = express();
