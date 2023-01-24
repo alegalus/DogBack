@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const { DATA_URL } = process.env;
 
-console.log(DATABASE_URL);
+console.log(DATA_URL);
 
 const sequelize = new Sequelize(DATA_URL, {
   logging: false, // set to console.log to see the raw SQL queries
