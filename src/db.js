@@ -10,23 +10,23 @@ const sequelize = new Sequelize(DATA_URL, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
   //configuracion adicional para el deploy
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
-    },
-  },
+//   dialectOptions: {
+//     ssl: {
+//       require: true,
+//       rejectUnauthorized: false,
+//     },
+//   },
 });
 
 //revision de conectividad
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log("conexion existosa");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// sequelize
+//   .authenticate()
+//   .then(() => {
+//     console.log("conexion existosa");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 const basename = path.basename(__filename);
 
