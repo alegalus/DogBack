@@ -26,7 +26,7 @@ const { PGPORT } = process.env
 
 // Syncing all the models at once.
 conn.sync().then(() => {
-  server.listen(PGPORT, () => {
+  server.listen(`192.168.0.208:$PGPORT`, () => {
     console.log('%s listening at ' + PGPORT + 'funciona Ok'); // eslint-disable-line no-console
   });
 });
