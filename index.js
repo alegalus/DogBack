@@ -20,13 +20,13 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 
-const { PGPORT } = process.env
+const { PORT } = process.env
 
 
 
 // Syncing all the models at once.
 conn.sync().then(() => {
-  server.listen(PGPORT, () => {
-    console.log('%s listening at ' + PGPORT + 'funciona Ok'); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log('%s listening at ' + PORT + 'funciona Ok'); // eslint-disable-line no-console
   });
 });
