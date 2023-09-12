@@ -31,7 +31,7 @@ let getApiData = async () => {
       height: el.height.metric + " cm",
       life_span: el.life_span,
       temperaments: tempObj,
-      //image: el.image.url,
+      image: el.image.url,
       origin: el.origin,
       //cargue estos datos para filtrar en front de donde eran originarios
       apiDog: true,
